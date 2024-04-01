@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{output.css}" crossorigin="anonymous">
+    <title>List issues</title>
+</head>
+<body>
+
+<div class="min-h-screen m-auto flex flex-col gap-2 justify-center items-center">
+    <div class="relative w-1/2 border border-border">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    #
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Description
+                </th>
+                <th scope="col" class="px-6 py-3"></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr data-th-each="task : ${tasks}" class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                    <td data-th-text="${task.id}" class="px-6 py-4"></td>
+                    <td data-th-text="${task.name}" class="px-6 py-4"></td>
+                    <td data-th-text="${task.description}" class="px-6 py-4"></td>
+                    <td class="px-6 py-4">
+                        <a th:href="@{'/edit/'+${task.id}}"
+                           class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="/create" class="text-blue-500 hover:underline">Voltar</a>
+</div>
+
+</body>
+</html>
