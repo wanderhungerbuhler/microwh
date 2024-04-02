@@ -54,3 +54,8 @@ The application will be available on port `8080`
 ## Demo
 If you prefer do you can test this project in your browser using a [DEMO](https://microwh.onrender.com/) version.
 
+<br />
+
+#### Note 
+I available this project in a Free Tier that use a **AWS** in backstage service called **[Render](https://render.com/)** 
+for this reason, maybe when you access can be delay requests by 50 seconds or more.
