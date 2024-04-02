@@ -35,3 +35,8 @@ To use the project locally, follow the steps below:
 
 ```bash
 git clone https://github.com/wanderhungerbuhler/microwh.git
+```
+
+## Demo
+If you prefer do you can test this project in your browser using a [DEMO](https://microwh.onrender.com/) version.
+
