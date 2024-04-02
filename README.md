@@ -5,7 +5,7 @@ by Wander Hungerbühler
 </div>
 
 <div style="text-align: center">
-    <img width="100%" src="https://github.com/wanderhungerbuhler/microwh/blob/main/src/main/resources/static/images/layout.png" />
+    <img width="100%" alt="img" src="https://github.com/wanderhungerbuhler/microwh/blob/main/src/main/resources/static/images/layout.png" />
 </div>
 
 ## Description
@@ -31,11 +31,25 @@ This project serves as a study base and example for developing microservices-bas
 
 To use the project locally, follow the steps below:
 
-1. Clone the repository:
-
+Clone the repository:
 ```bash
 git clone https://github.com/wanderhungerbuhler/microwh.git
 ```
+<br />
+
+Run `mvn clean install` to install dependencies
+```bash
+mvn clean install
+```
+<br />
+
+Run `mvn spring-boot:run` to deploy local app
+```bash
+mvn spring-boot:run
+```
+<br />
+
+The application will be available on port `8080`
 
 ## Demo
 If you prefer do you can test this project in your browser using a [DEMO](https://microwh.onrender.com/) version.
